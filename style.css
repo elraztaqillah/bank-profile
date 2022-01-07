@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+	/*#memanggil font dgn beberapa type text */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth !important;
+}
+/* smooth scrolling */
+
+
+
+.navbar{
+	background: #131313;
+	padding:1rem 8rem;
+		/*atasBawah | kanan kiri*/
+	z-index: 1000;
+}
+
+.navbar .navbar-brand{
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
+/*#click inspect > click baris yg dipilih > copy > copy selector */
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+		/*(n); agar pilih semua navbar*/
+	color: #fff;
+	font-size: 1.1rem;
+	padding: 0 0.8rem;
+		/*#agar ada space*/
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a.active{
+			/* mengetahui navbar yang aktif */
+	color: #81b214;
+}
+
+#navbarSupportedContent > button{
+	background: #81b214;
+	font-weight: 600;
+	padding: 0.4rem 1.4rem;
+	border-radius: 30px;
+
+}
+
+#navbarSupportedContent > button:hover{
+	color: #111 !important;
+}
+
+/*#Jumbotron[VIDEO]*/
+.mid{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+.mid video{
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.mid .hero{
+	position: relative;
+
+}
+
+.mid .hero p{
+	width: 55%;
+	font-size: 1.1rem;
+	letter-spacing: 0.2px;
+	padding-bottom: 1.1rem;
+}
+
+.mid .hero a{
+	background: #81b214;
+	font-weight: 600;
+	padding: 0.4rem 1.4rem;
+	border-radius: 30px;
+	text-decoration: none;
+}
+
+.mid .hero a:hover{
+	/*background: #fff;*/
+	color: #000 !important;
+}
+
+.about{
+	background: #000;
+}
+
+.about .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: auto;
+
+}
+
+.about .text h6{
+	color: #206a5d;
+	font-weight: 800;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+
+.about .text h2{
+	color: #f7f5f4;
+	font-weight: 700;
+	font-size: 2.7rem;
+}
+
+.about .text p{
+	color: #f7f5f4;
+	font-weight: 400;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
+}
+
+.about .text a{
+	background: #81b214;
+	font-weight: 600;
+	padding: 0.4rem 1.4rem;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.about .text a:hover{
+	color: #000 !important;
+}
+
+
+
+
+.discovery .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: auto;
+
+}
+
+.discovery .text h6{
+	color: #111;
+	font-weight: 800;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+
+.discovery .text h2{
+	color: #206a5d;
+	font-weight: 700;
+	font-size: 2.7rem;
+}
+
+.discovery .text p{
+	color: #206a5d;
+	font-weight: 400;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
+}
+
+.discovery .text a{
+	background: #81b214;
+	font-weight: 500;
+	padding: 0.4rem 1.4rem;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.discovery .text a:hover{
+	color: #000 !important;
+}
+
+
+.service{
+	background: #000;
+}
+
+.service .one{
+		/* membuat card */
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 2rem 1.5rem;
+		/* panjang kebawah */
+	border-radius: 7px;
+}
+
+.service .col .row .one h5{
+		/* memanggil kelas mesti dr buyutnya  */
+	color: #206a5d !important;
+}
+
+.sign{
+
+}
+
+.sign .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: auto;
+
+}
+
+.sign .text h6{
+	color: #111;
+	font-weight: 800;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+
+.sign .text h2{
+	color: #206a5d;
+	font-weight: 700;
+	font-size: 2.7rem;
+}
+
+.sign .text p{
+	/* color: #bfdcae; */
+	color: #206a5d;
+	font-weight: 400;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
+}
+
+.sign .text a{
+	background: #81b214;
+	font-weight: 500;
+	padding: 0.4rem 1.4rem;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.sign .text a:hover{
+	color: #000 !important;
+}
+
+body > footer{
+	background: #111 ;
+}
+
+@media screen and (max-width: 988px){
+	.navbar{
+		/* background: #131313;  */
+		padding:1rem;
+			/*atasBawah | kanan kiri*/
+		/* z-index: 1000;  */
+	}
+		/* Agar kiri kanan tidak ada ruang */
+
+	#navbarSupportedContent > ul{
+		padding-left: 0.8rem;
+	}
+
+	#navbarSupportedContent > ul > li:nth-child(n) > a {
+			/*(n); agar pilih semua navbar*/
+		/* color: #fff; */
+		/* font-size: 1.1rem; */
+		padding: 0.8rem 0;
+			/*#agar ada space*/
+	}
+	.mid .hero h2{
+		/* width: 55%; */
+		font-size: 2.5rem;
+		/* letter-spacing: 0.2px; */
+		/* padding-bottom: 1.1rem; */
+	}
+
+	.mid .hero p{
+		/* width: 55%; */
+		font-size: 1rem;
+		/* letter-spacing: 0.2px;
+		padding-bottom: 1.1rem; */
+	}
+
+	.mid .hero a{
+		font-size: 0.9rem;
+	}
+}
+
+/* .footer .container .section .email label{
+	margin-bottom: 1.4rem;
+} */
