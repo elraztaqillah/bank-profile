@@ -266,7 +266,8 @@ body > footer{
 	background: #111 ;
 }
 
-@media screen and (max-width: 988px){
+/* 988px */
+@media screen and (max-width: 992px){
 	.navbar{
 		/* background: #131313;  */
 		padding:1rem;
