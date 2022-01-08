@@ -269,7 +269,7 @@ body > footer{
 /* 988px */
 /* @media screen and (max-width: 992px){ */
 
-@media screen and (min-width: 992px){
+@media screen and (max-width: 988px){
 	.navbar{
 		/* background: #131313;  */
 		padding:1rem;
