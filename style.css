@@ -206,7 +206,7 @@ html{
 	align-items: center;
 	text-align: center;
 	padding: 2rem 1.5rem;
-		/* panjang kebawah */
+		/* panjang kebawah, menyesuaikan layar ketika di click */
 	border-radius: 7px;
 }
 
@@ -308,6 +308,40 @@ body > footer{
 	}
 }
 
+
+@media screen and (max-width: 576px){
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a.active{
+			/* mengetahui navbar yang aktif */
+	color: #81b214;
+}
+
+.navbar{
+	position: relative;
+		/*#agar mengalah/menyesuaikan*/
+	display: flex;
+
+}
+
+
+.mid{
+	position: relative;
+}
+
+/*@media screen and (max-width: 576px) { 
+			#576px utk ukuran mobile 
+	body{
+		font-size: 120px;
+	}
+	.header{
+	grid-template-areas: 
+	'1.mp4'
+	'1.svg'
+	'jam-2';
+} */
+
+
 /* .footer .container .section .email label{
 	margin-bottom: 1.4rem;
-} */
+} 
